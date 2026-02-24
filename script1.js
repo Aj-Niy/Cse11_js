@@ -1,5 +1,6 @@
 console.log("Hello, World!");
 document.write("This is a simple JavaScript file.");
+document.write("<br>");
 
 
 let num=10;
@@ -49,3 +50,13 @@ if(sym1===sym2){
     console.log("false");
 }
 console.log(sym1===sym2); //false
+
+
+//loop
+document.write("Loop Started"+"<br>");
+let count;
+for(count=0;count<=10;count++){
+    document.write(count);
+}
+document.write("<br>");
+document.write("Loop Stopped");
