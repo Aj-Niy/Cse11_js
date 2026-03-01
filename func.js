@@ -42,3 +42,12 @@ function  myFunction() {
 function SayHello(name,age) {
     document.write(name + " is " + age + " years old!"+"<br>");
 }
+
+const person = {
+    name: "John",
+    age: 30,
+    city: "New York"  
+};
+for(let x in person){
+    document.write(x + ": " + person[x] + "<br>");
+}
