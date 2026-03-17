@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM Study</title>
+        
+        <style>
+            .democlass2{
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <!--window events given in body tag-->
+    <body onload="myBodyFunction()" onresize="myResizeFunction()" onunload="myUnloadFunction()">
+        <h1>DOM Study</h1>
+        
+        <h2 id="attri" class="class22">This is a heading.</h2>
+        <h2>Mouse Events</h2>
+        <button onclick="changeContent()">Change Content</button>
+
+        <!--mouse events-->
+
+        <button onmouseover="changeColor(this)" onmouseout="resetColor(this)">Hover over me</button>
+
+        <button onmouseup="changeColor(this)" onmousedown="resetColor(this)">Mouse Up n Down</button>
+        <button onmousemove="changeColor(this)">Mouse Move</button>
+
+        <button ondblclick="changeColor(this)" ondbclick="resetColor(this)">Double Click</button>
+
+        <!--key events-->
+        <button onkeydown="changeColor(this)" onkeyup="resetColor(this)">Key Down n Up</button>
+
+        <!--form events-->
+        <br><br>
+        <h1>FORM</h1>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text"><br>
+
+        </form>
+        <!--window events-->
+        
+
+
+
+        <script src="./DOM2.js"></script>
+    </body>
+</html>

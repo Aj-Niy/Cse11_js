@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>DOM Study</title>
-        <link rel="stylesheet" href="./style-exp1.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Grade Calculator</h1>
-            <h3>Enter the number of Subjects</h3>
-            <form action="#">
-                <input type="number" id="subjects" placeholder="Number of Subjects" required>
-                <button onclick="calculateResult()">Calculate</button>
-            </form>
-            <br>
-            <div id="result"></div>
-        </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="style-exp1.css">
+</head>
 
-        <script src="./script-exp1.js"></script>
-    </body>
+<body>
+
+<div class="container">
+
+    <h1>Grade Calculator</h1>
+    <p class="subtitle">Enter the number of subjects to calculate your result</p>
+
+    <div class="input-group">
+        <input type="number" id="subjects" placeholder="Number of Subjects" min="1">
+        <button onclick="calculateResult()">Calculate Result</button>
+    </div>
+
+    <div id="result" class="result-card"></div>
+
+</div>
+
+<script src="script-exp1.js"></script>
+
+</body>
 </html>
