@@ -28,6 +28,7 @@ function changeContent(){
 
 }
 
+
 //creating element
 let newPara=document.createElement("p");
 newPara.innerHTML="This is a new paragraph created using createElement() method.";
